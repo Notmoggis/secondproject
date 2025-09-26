@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resultados del examen. Revisa tu puntaje y el desglose de respuestas correctas, incorrectas y no respondidas.">
+  <title>Resultados del Examen - ML Cursos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="resultados.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body id="body-resultados">
+
+  <section class="aside-container">
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" class="menu-btn" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </label>
+  
+    <aside class="sidebar">
+      <div class="user">
+        <img src="profile.png" alt="Usuario">
+        <h3>USER</h3>
+      </div>
+    
+      <nav class="nav-links">
+        <ul>
+          <li><a href="dashboard.html"><span class="material-symbols-outlined">home</span><p>Inicio</p></a></li>
+          <li><a href="vlog.html"><span class="material-symbols-outlined">data_thresholding</span><p>Vlog</p></a></li>
+          <li><a href="videos.html"><span class="material-symbols-outlined">video_library</span><p>Videos</p></a></li>
+          <li><a href="test.html"><span class="material-symbols-outlined">assignment</span><p>Test</p></a></li>
+          <li><a href="index.html"><span class="material-symbols-outlined">info</span><p>Acerca</p></a></li>
+        </ul>
+      </nav>
+    
+      <div class="logout">
+        <a href="index.html"><span class="material-symbols-outlined">logout</span><p>Salir</p></a>
+      </div>
+    </aside>
+  </section>
+
+  <main class="main-content" role="main">
+    <section class="resultados-card" aria-labelledby="resultados-title">
+      <h1 id="resultados-title">¡Examen Finalizado!</h1>
+
+      <div class="score">
+        <span class="material-symbols-outlined" aria-hidden="true">military_tech</span>
+        <h2>Tu puntaje: <strong>85/100</strong></h2>
+      </div>
+
+      <p>Buen trabajo 🎉. Revisa el desglose de tus respuestas:</p>
+
+      <section class="resumen" aria-label="Desglose de respuestas">
+        <div><span class="material-symbols-outlined" aria-hidden="true">check_circle</span> Correctas: 68</div>
+        <div><span class="material-symbols-outlined" aria-hidden="true">cancel</span> Incorrectas: 17</div>
+        <div><span class="material-symbols-outlined" aria-hidden="true">help</span> Sin responder: 15</div>
+      </section>
+
+      <div class="acciones" role="group" aria-label="Acciones disponibles">
+        <button class="btn">Revisar Examen</button>
+        <button class="btn secundario">Volver al Dashboard</button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

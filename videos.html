@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma de videos educativos. Accede a clases, repaso de ejercicios y contenido exclusivo para reforzar tu aprendizaje.">
+  <title>Videos del Curso | Plataforma</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body id="body-student">
+
+  <section class="aside-container">
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" class="menu-btn" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </label>
+  
+    <aside class="sidebar">
+      <div class="user">
+        <img src="profile.png" alt="Usuario">
+        <h3>USER</h3>
+      </div>
+    
+      <nav class="nav-links">
+        <ul>
+          <li><a href="dashboard.html"><span class="material-symbols-outlined">home</span><p>Inicio</p></a></li>
+          <li><a href="vlog.html"><span class="material-symbols-outlined">data_thresholding</span><p>Vlog</p></a></li>
+          <li><a href="videos.html"><span class="material-symbols-outlined">video_library</span><p>Videos</p></a></li>
+          <li><a href="test.html"><span class="material-symbols-outlined">assignment</span><p>Test</p></a></li>
+          <li><a href="index.html"><span class="material-symbols-outlined">info</span><p>Acerca</p></a></li>
+        </ul>
+      </nav>
+    
+      <div class="logout">
+        <a href="index.html"><span class="material-symbols-outlined">logout</span><p>Salir</p></a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Main content -->
+  <main class="main-content-videos" role="main">
+    <header class="videos__header">
+      <h1>Videos del Curso</h1>
+      <input type="search" id="search-videos" placeholder="Buscar videos..." aria-label="Buscar videos">
+    </header>
+
+    <section class="videos__grid" aria-label="Listado de videos del curso">
+      <!-- Video 1 -->
+      <article class="video-card">
+        <div class="video-thumbnail">
+          <img src="thumb1.jpg" alt="Introducción al Curso">
+        </div>
+        <div class="video-info">
+          <h3>Introducción al Curso</h3>
+          <p>Profesor: Juan Pérez</p>
+          <div class="video-actions">
+            <button aria-label="Reproducir video"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span></button>
+            <button aria-label="Guardar en favoritos"><span class="material-symbols-outlined" aria-hidden="true">bookmark</span></button>
+            <button aria-label="Compartir video"><span class="material-symbols-outlined" aria-hidden="true">share</span></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Video 2 -->
+      <article class="video-card">
+        <div class="video-thumbnail">
+          <img src="thumb2.jpg" alt="Álgebra - Repaso">
+        </div>
+        <div class="video-info">
+          <h3>Álgebra - Repaso</h3>
+          <p>Profesor: María López</p>
+          <div class="video-actions">
+            <button aria-label="Reproducir video"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span></button>
+            <button aria-label="Guardar en favoritos"><span class="material-symbols-outlined" aria-hidden="true">bookmark</span></button>
+            <button aria-label="Compartir video"><span class="material-symbols-outlined" aria-hidden="true">share</span></button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Video 3 -->
+      <article class="video-card">
+        <div class="video-thumbnail">
+          <img src="thumb3.jpg" alt="Ejercicios de Física">
+        </div>
+        <div class="video-info">
+          <h3>Ejercicios de Física</h3>
+          <p>Profesor: Carlos Sánchez</p>
+          <div class="video-actions">
+            <button aria-label="Reproducir video"><span class="material-symbols-outlined" aria-hidden="true">play_circle</span></button>
+            <button aria-label="Guardar en favoritos"><span class="material-symbols-outlined" aria-hidden="true">bookmark</span></button>
+            <button aria-label="Compartir video"><span class="material-symbols-outlined" aria-hidden="true">share</span></button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>
+

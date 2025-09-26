@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia sesión o crea una cuenta para acceder a los cursos de preparación universitaria.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Iniciar Sesión - ML Cursos</title>
+</head>
+<body>
+
+  <header>
+    
+
+    <div class="menu__header-smalldevices">
+      <input id="menu-toggle" class="checkbox-fake" type="checkbox" aria-hidden="true">
+      <label for="menu-toggle" class="label__checkbox-fake" aria-hidden="true">☰</label>
+      <nav class="menu-smalldevices" aria-label="Menú principal" aria-hidden="true">
+        <a class="menu__smalldevices-items" href="login.html">LOG IN</a>
+        <a class="menu__smalldevices-items" href="index.html">HOME</a>
+        <a class="menu__smalldevices-items" href="unam.html">UNAM</a>
+        <a class="menu__smalldevices-items" href="poli.html">IPN</a>
+        <a class="menu__smalldevices-items" href="uam.html">UAM</a>
+      </nav>
+    </div>
+
+    <nav class="menu__header" aria-label="Navegación principal">
+      <div class="menu__header--options-log"><a href="login.html">LOG IN</a></div>
+      <div class="menu__header--options"><a href="index.html">HOME</a></div>
+      <div class="menu__header--options"><a href="unam.html">UNAM</a></div>
+      <div class="menu__header--options"><a href="poli.html">IPN</a></div>
+      <div class="menu__header--options"><a href="uam.html">UAM</a></div>
+    </nav>
+
+  </header>
+
+
+  <main id="body--login" role="main">
+    <div class="container__interfacer">
+      <input type="checkbox" id="flip-toggle" hidden aria-hidden="true">
+
+      <div class="container__form">
+
+        <section class="form__login" aria-labelledby="login-title">
+          <div class="container__title__log">
+            <h2 id="login-title">Iniciar Sesión</h2>
+          </div>
+          <form id="login-form" action="dashboard.html" method="post">
+            <div class="input-icon">
+              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+              <input type="email" id="login-email" name="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="input-icon">
+              <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+              <input type="password" id="login-password" name="password" placeholder="Contraseña" required>
+            </div>
+
+            <a href="dashboard.html"><button type="submit">Iniciar Sesión</button></a>
+            <label for="flip-toggle" class="switch-button">Crear Cuenta</label>
+          </form>
+        </section>
+
+
+        <section class="form__createaccount" aria-labelledby="signup-title">
+          <div class="container__title__log">
+            <h2 id="signup-title">Crear Cuenta</h2>
+          </div>
+          <form id="signup-form" action="dashboard.html" method="post">
+            <div class="input-icon">
+              <span class="material-symbols-outlined" aria-hidden="true">person</span>
+              <input type="text" id="signup-name" name="name" placeholder="Nombre completo" required>
+            </div>
+
+            <div class="input-icon">
+              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+              <input type="email" id="signup-email" name="email" placeholder="Correo electrónico" required>
+            </div>
+
+            <div class="input-icon">
+              <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+              <input type="password" id="signup-password" name="password" placeholder="Contraseña" required>
+            </div>
+
+            <div class="input-icon">
+              <span class="material-symbols-outlined" aria-hidden="true">lock_reset</span>
+              <input type="password" id="signup-password-confirm" name="password_confirm" placeholder="Confirmar contraseña" required>
+            </div>
+
+           <a href="dashboard.html"> <button type="submit">Crear Cuenta</button></a>
+            <label for="flip-toggle" class="switch-button">Iniciar Sesión</label>
+          </form>
+        </section>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>

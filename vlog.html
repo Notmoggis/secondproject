@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vlog de Consejos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="vlog.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body id="body-vlog">
+
+  <section class="aside-container">
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" class="menu-btn" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </label>
+  
+    <aside class="sidebar">
+      <div class="user">
+        <img src="profile.png" alt="Usuario">
+        <h3>USER</h3>
+      </div>
+    
+      <nav class="nav-links">
+        <ul>
+          <li><a href="dashboard.html"><span class="material-symbols-outlined">home</span><p>Inicio</p></a></li>
+          <li><a href="vlog.html"><span class="material-symbols-outlined">data_thresholding</span><p>Vlog</p></a></li>
+          <li><a href="videos.html"><span class="material-symbols-outlined">video_library</span><p>Videos</p></a></li>
+          <li><a href="test.html"><span class="material-symbols-outlined">assignment</span><p>Test</p></a></li>
+          <li><a href="index.html"><span class="material-symbols-outlined">info</span><p>Acerca</p></a></li>
+        </ul>
+      </nav>
+    
+      <div class="logout">
+        <a href="index.html"><span class="material-symbols-outlined">logout</span><p>Salir</p></a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <header class="vlog-header">
+      <h1>Vlog de Estudio</h1>
+      <p>Consejos, tips y recursos para potenciar tu aprendizaje.</p>
+    </header>
+
+    <!-- Publicaciones -->
+    <section class="vlog-posts">
+      <article class="post">
+        <img src="https://source.unsplash.com/400x200/?study,books" alt="Consejo de estudio">
+        <div class="post-content">
+          <h2>Cómo organizar tu tiempo de estudio</h2>
+          <p>Descubre técnicas de organización que te ayudarán a aprovechar mejor cada hora.</p>
+          <button class="btn-leer">
+            <span class="material-symbols-outlined">menu_book</span> Leer más
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://source.unsplash.com/400x200/?motivation,student" alt="Motivación">
+        <div class="post-content">
+          <h2>Tips para mantenerte motivado</h2>
+          <p>Pequeños hábitos diarios que harán la diferencia en tu preparación.</p>
+          <button class="btn-leer">
+            <span class="material-symbols-outlined">favorite</span> Leer más
+          </button>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://source.unsplash.com/400x200/?gift,education" alt="Regalo educativo">
+        <div class="post-content">
+          <h2>Regalos útiles para estudiantes</h2>
+          <p>Ideas prácticas que realmente aportan a tu día a día como estudiante.</p>
+          <button class="btn-leer">
+            <span class="material-symbols-outlined">card_giftcard</span> Leer más
+          </button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+</body>
+</html>

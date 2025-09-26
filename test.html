@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Genera exámenes personalizados con Inteligencia Artificial para reforzar tu aprendizaje en Matemáticas, Física, Química y más.">
+  <title>Exámenes con IA - ML Cursos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ia.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body id="body-test">
+
+
+  <section class="aside-container">
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" class="menu-btn" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </label>
+    <aside class="sidebar">
+      <div class="user">
+        <img src="profile.png" alt="Usuario">
+        <h3>USER</h3>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="dashboard.html"><span class="material-symbols-outlined">home</span><p>Inicio</p></a></li>
+          <li><a href="vlog.html"><span class="material-symbols-outlined">data_thresholding</span><p>Vlog</p></a></li>
+          <li><a href="videos.html"><span class="material-symbols-outlined">video_library</span><p>Videos</p></a></li>
+          <li><a href="test.html"><span class="material-symbols-outlined">assignment</span><p>Test</p></a></li>
+          <li><a href="index.html"><span class="material-symbols-outlined">info</span><p>Acerca</p></a></li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <a href="index.html"><span class="material-symbols-outlined">logout</span><p>Salir</p></a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-content-test" role="main">
+    <!-- HEADER PRINCIPAL -->
+
+      <header class="ia-header">
+      <h1>Exámenes con IA</h1>
+      <p>Genera exámenes personalizados con Inteligencia Artificial para reforzar tu aprendizaje.</p>
+    </header>
+    <!-- SECCIÓN: OPCIONES DE EXAMEN -->
+    <section class="ia-options" aria-labelledby="configurar-examen">
+      <h2 id="configurar-examen">Configura tu examen</h2>
+      <form>
+        <label for="tema">Tema</label>
+        <input type="text" id="tema" name="tema" placeholder="Ej. Matemáticas, Física, Química">
+
+        <label for="nivel">Nivel</label>
+        <select id="nivel" name="nivel">
+          <option value="basico">Básico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="avanzado">Avanzado</option>
+        </select>
+
+        <label for="cantidad">Número de preguntas</label>
+        <input type="number" id="cantidad" name="cantidad" min="5" max="50" value="10">
+
+        <button type="submit" class="btn-generar" aria-label="Generar examen con IA">
+          <span class="material-symbols-outlined" aria-hidden="true">auto_awesome</span>
+          Generar Examen
+        </button>
+      </form>
+    </section>
+
+    <!-- SECCIÓN: EXÁMENES RECIENTES -->
+    <section class="ia-history" aria-labelledby="examenes-recientes">
+      <h2 id="examenes-recientes">Exámenes Recientes</h2>
+      <div class="exam-cards" role="list">
+        <article class="exam-card" role="listitem">
+          <h3>Matemáticas - Básico</h3>
+          <p>10 preguntas</p>
+          <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+        </article>
+        <article class="exam-card" role="listitem">
+          <h3>Química - Avanzado</h3>
+          <p>20 preguntas</p>
+          <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+        </article>
+        <article class="exam-card" role="listitem">
+          <h3>Historia - Intermedio</h3>
+          <p>15 preguntas</p>
+          <span class="material-symbols-outlined" aria-hidden="true">check_circle</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

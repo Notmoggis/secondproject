@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard del estudiante para seguimiento de cursos, avances y acceso a quizzes.">
+  <title>Dashboard - Estudiante</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body id="body-dashboard">
+
+  <section class="aside-container">
+    <input type="checkbox" id="toggle-sidebar" hidden>
+    <label for="toggle-sidebar" class="menu-btn" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </label>
+  
+    <aside class="sidebar">
+      <div class="user">
+        <img src="profile.png" alt="Usuario">
+        <h3>USER</h3>
+      </div>
+    
+      <nav class="nav-links">
+        <ul>
+          <li><a href="dashboard.html"><span class="material-symbols-outlined">home</span><p>Inicio</p></a></li>
+          <li><a href="vlog.html"><span class="material-symbols-outlined">data_thresholding</span><p>Vlog</p></a></li>
+          <li><a href="videos.html"><span class="material-symbols-outlined">video_library</span><p>Videos</p></a></li>
+          <li><a href="test.html"><span class="material-symbols-outlined">assignment</span><p>Test</p></a></li>
+          <li><a href="index.html"><span class="material-symbols-outlined">info</span><p>Acerca</p></a></li>
+        </ul>
+      </nav>
+    
+      <div class="logout">
+        <a href="index.html"><span class="material-symbols-outlined">logout</span><p>Salir</p></a>
+      </div>
+    </aside>
+  </section>
+
+
+  <main class="dashboard" role="main">
+
+    <section class="progress" aria-labelledby="progress-section">
+      <h2 id="progress-section">Avances en Cursos</h2>
+
+      <article class="progress-card">
+        <p>Curso UNAM</p>
+        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" style="width: 70%;"></div>
+        </div>
+        <span>70% completado</span>
+      </article>
+
+      <article class="progress-card">
+        <p>Curso IPN</p>
+        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" style="width: 40%;"></div>
+        </div>
+        <span>40% completado</span>
+      </article>
+    </section>
+
+
+    <section class="history" aria-labelledby="history-section">
+      <h2 id="history-section">Historial de Videos</h2>
+      <div class="history-list">
+
+        <article class="history-item">
+          <span class="material-symbols-outlined" aria-hidden="true">play_circle</span>
+          <div>
+            <h3>Álgebra - Repaso</h3>
+            <p>Última vez visto: ayer</p>
+          </div>
+        </article>
+
+        <article class="history-item">
+          <span class="material-symbols-outlined" aria-hidden="true">play_circle</span>
+          <div>
+            <h3>Física - Movimiento Rectilíneo</h3>
+            <p>Última vez visto: hace 2 días</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="quizzes" aria-labelledby="quizzes-section">
+      <h2 id="quizzes-section">Acceso a Quizzes</h2>
+      <div class="quiz-buttons">
+        <button class="quiz-btn" aria-label="Iniciar Quiz UNAM">
+          <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+          Quiz UNAM
+        </button>
+        <button class="quiz-btn" aria-label="Iniciar Quiz IPN">
+          <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+          Quiz IPN
+        </button>
+        <button class="quiz-btn" aria-label="Iniciar Quiz UAM">
+          <span class="material-symbols-outlined" aria-hidden="true">quiz</span>
+          Quiz UAM
+        </button>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
+
